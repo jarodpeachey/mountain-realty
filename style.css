@@ -2030,7 +2030,7 @@ hr.primary{
     height: 100%;
  }
 
- i.fas {
+ i.fas, i.fab {
     color: var(--primary);
  }
  

@@ -46,6 +46,10 @@
     background: var(--background-dark);
     color: white;
  }
+
+ .bg-dark .subtitle {
+    color: var(--white-transparent);
+ }
  
  body {
     width: 100%;
@@ -89,7 +93,7 @@
  
  
  
-    --white-transparent: rgba(255, 255, 255, 0.753);
+    --white-transparent: rgba(255, 255, 255, 0.781);
  }
  
  /* LAYOUT AND GRID SYSTEM
@@ -615,7 +619,7 @@
  }
  
  .subtitle {
-    color: #8f8f8f;
+    color: #727272;
     margin: 0;
     padding: 0;
     margin-bottom: 3rem;

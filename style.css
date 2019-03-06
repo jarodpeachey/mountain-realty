@@ -2106,6 +2106,12 @@ hr.primary{
     height: 100%;
  }
 
+ .full-window-width {
+    position: absolute;
+    width: 100%;
+    left: 0;
+ }
+
  i.fas, i.fab {
     color: var(--primary);
  }

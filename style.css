@@ -1633,7 +1633,7 @@
  }
 
  .collection-item {
-   padding: 15px;
+   padding: 10px;
    list-style: none;
    margin: 0;
    border: 1px solid var(--light-gray);
@@ -1644,7 +1644,6 @@
 }
 
 .collection-item:hover {
-  cursor: pointer;
   box-shadow: none;
   position: static;
   line-height: inherit;

@@ -1687,7 +1687,7 @@
   line-height: inherit;
 }
 
-.collection.links .collection-item:active {
+.collection.links .collection-item:active, .collection.links .collection-item:active i {
   background: var(--primary);
   cursor: pointer;
   color: white;

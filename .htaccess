@@ -1,6 +1,6 @@
 # BEGIN GZIP
 <IfModule mod_headers.c>
-	<FilesMatch "\.(js|css|xml|gz|html)$">
+	<FilesMatch "\.(css|xml|gz|html)$">
 		Header append Vary: Accept-Encoding
 	</FilesMatch>
 </IfModule>
@@ -13,6 +13,4 @@ AddOutputFilterByType DEFLATE text/css
 AddOutputFilterByType DEFLATE application/xml
 AddOutputFilterByType DEFLATE application/xhtml+xml
 AddOutputFilterByType DEFLATE application/rss+xml
-AddOutputFilterByType DEFLATE application/javascript
-AddOutputFilterByType DEFLATE application/x-javascript
 # END GZIP

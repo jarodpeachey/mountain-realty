@@ -563,6 +563,16 @@
     margin: 0;
     padding: 0;
  }
+
+ h1.primary,
+ h2.primary,
+ h3.primary,
+ h4.primary,
+ h5.primary,
+ h6.primary {
+    color: var(--primary);
+    font-weight: 700;
+ }
  
  html {
     font-size: 10px;
@@ -648,33 +658,18 @@
     color: var(--link-dark);
     display: inline-block;
     font-weight: 500;
-    line-height: 1.4rem;
- }
- 
- a:hover, a.hover { 
-    line-height: 1.5rem;
-    transition-duration: .5s;
-    box-shadow: 0px 2px 0px 0px var(--link-dark);
- }
- 
- a:hover:visited {
-    box-shadow: 0px 2px 0px 0px #3910cc;
- }
- 
- a:visited, a.visited { color: #3910cc; }
- 
- a:active, a.active {
-    color: #003ec5;
-    box-shadow: 0px 2px 0px 0px #003ec5;
  }
  
  
  /* BUTTONS
  ---------------------------------------------------------------
  ---------------------------------------------------------------*/
- 
+ button a {
+    color: white !important;
+ }
+
  button,
- .button,
+ a.button,
  input[type="submit"],
  input[type="reset"],
  input[type="button"] {
@@ -692,10 +687,11 @@
     margin-right: 10px;
     text-align: center;
     text-transform: uppercase;
+    box-shadow: none;
  }
  
  button:hover,
- .button:hover,
+ a.button:hover,
  input[type="submit"]:hover,
  input[type="reset"]:hover,
  input[type="button"]:hover {
@@ -703,6 +699,7 @@
     cursor: pointer;
     transition-duration: .2s;
     background: var(--lightest-gray);
+    box-shadow: none;
  }
  
  button.small,
@@ -3520,4 +3517,10 @@ a.footer-link:hover {
 .float-up {
    transition: top 1s ease-in;
    top: -150px !important;
+}
+
+@media (max-width: 768px){
+   .hidden-below-tablet {
+      display: none;
+   }
 }

@@ -8,7 +8,7 @@ window.onscroll = function () {
         header.classList.remove('transparent-nav');
     } else {
         header.classList.remove('colored-nav');
-        header.classList.add('transparent-nav');
+        header.classList.add('transparent-nav')
     }
 
     // Float up

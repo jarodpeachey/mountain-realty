@@ -5,10 +5,10 @@ window.onscroll = function () {
     // Change header state and color
     if (window.scrollY >= 300) {
         header.classList.add('colored-nav');
-        header.classList.remove('transparent-nav')
+        header.classList.remove('transparent-nav');
     } else {
         header.classList.remove('colored-nav');
-        header.classList.add('transparent-nav')
+        header.classList.add('transparent-nav');
     }
 
     // Float up

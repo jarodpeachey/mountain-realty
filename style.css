@@ -3319,7 +3319,7 @@ hr.primary{
    width: 100%;
    animation-name: header-down;
    animation-iteration-count: 1;
-   animation-duration: .5s;
+   animation-duration: .51s;
    z-index: 50;
 }
 

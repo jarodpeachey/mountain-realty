@@ -1,0 +1,47 @@
+<IfModule mod_headers.c>
+Header set Connection keep-alive
+
+# Cache-control headers
+    # 480 weeks - 290304000
+    # 2 WEEKS
+    <filesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|swf)$">
+        Header set Cache-Control "max-age=1209600, public"
+    </filesMatch>
+
+    # 1 DAY
+    <filesMatch "\.(css)$">
+        Header set Cache-Control "max-age=86400, public, must-revalidate"
+        #Header set Cache-Control "max-age=0, public, must-revalidate"
+    </filesMatch>
+
+    # 2 DAYS
+    <filesMatch "\.(xml|txt|js)$">
+        Header set Cache-Control "max-age=172800, public, must-revalidate"
+    </filesMatch>
+
+    # 2 HOURS
+    <filesMatch "\.(html|htm)$">
+        Header set Cache-Control "max-age=7200, must-revalidate"
+    </filesMatch>
+
+    <FilesMatch "\.(gif|jpg|png|ico|css|js|pdf|txt)$">
+        Header append Cache-Control "public"
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_headers.c>
+	<FilesMatch "\.(js|css|xml|gz|html)$">
+		Header append Vary: Accept-Encoding
+	</FilesMatch>
+</IfModule>
+
+# compress text, html, javascript, css, xml:
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript

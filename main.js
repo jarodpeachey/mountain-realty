@@ -1,3 +1,5 @@
+alert('This works at the top of the file');
+
 const header = document.getElementById('header-nav');
 const floatUp = document.getElementById('animate-float-up');
 
@@ -30,3 +32,5 @@ window.onscroll = function () {
         }
     }
 }
+
+alert('This works at the bottom of the file');

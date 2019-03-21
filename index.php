@@ -361,7 +361,7 @@
             </div>
         </div>
     </section>
-    <script src="main.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
